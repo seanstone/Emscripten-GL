@@ -3,7 +3,7 @@ export BINARYEN := /usr
 EMFLAGS += -s WASM=1
 
 INCLUDE += -I glad/include -I include
-CFLAGS += -std=c11 -Os
+CFLAGS += -std=gnu11 -Os
 LDFLAGS += -lglfw3 -lGL -lpthread -lm -ldl
 XLDFLAGS += -lX11 -lXrandr -lXi -lXcursor -lXxf86vm -lXinerama
 EMFLAGS += -s WASM=1 -s NO_EXIT_RUNTIME=1 -s USE_GLFW=3 -s FULL_ES2=1 -s FULL_ES3=1 --preload-file $(PWD)/glsl@/glsl --preload-file $(PWD)/textures@/textures
