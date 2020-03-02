@@ -1,7 +1,3 @@
-# Binaryen required to compile to WASM
-export BINARYEN := /usr
-EMFLAGS += -s WASM=1
-
 INCLUDE += -I glad/include -I include
 CFLAGS += -std=gnu11 -Os
 LDFLAGS += -lglfw3 -lGL -lpthread -lm -ldl
